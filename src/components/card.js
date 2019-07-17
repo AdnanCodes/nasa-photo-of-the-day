@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Card(){
+function Card(props){
     return(
         <div>
-               This is card Element
+               This is card Element  
         </div>
         
     );

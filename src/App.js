@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState }from "react";
 import "./App.css";
 import Card from './components/card.js'
+import AcquireData from './components/data'
 
 function App() {
+
   return (
     <div className="App">
       <p>
@@ -10,6 +12,7 @@ function App() {
         app! Have fun 🚀!
       </p>
       <Card />
+      <AcquireData />
     </div>
     
   );
