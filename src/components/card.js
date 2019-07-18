@@ -1,12 +1,15 @@
 import React from 'react';
+import { Details, Image, Title} from './cardComponents'
 
-function Card(props){
+export default function Card(props){
     return(
         <div>
-               This is card Element  
+            <Title title={props.passData.title}/>
+            <Image src={props.passData.hdurl}/>
+            <Details detail={props.passData.explanation}/>
+            {console.log(props.passData)} 
         </div>
         
     );
 };
 
-export default Card;

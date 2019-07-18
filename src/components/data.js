@@ -9,18 +9,17 @@ function AcquireData(){
 
     useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-07-14`)
+        .get(`https://api.nasa.gov/planetary/apod?api_key=lScG6MrWnDarwPxYp1wdk8MlQgMs1MBqW59Sqfzp&date=2019-07-14`)
         .then(response => {
             const fetch = response.data;
            setFetchData(fetch)
         })
         .catch(error => console.log('Some errors', error))
     }, [])
-    console.log(fetchData)
     return(
         <div>
-            This will do some data fetching
-            <Card />
+            <Card passData ={fetchData} />
+            {/* //State being passed as props */}
         </div>
     )
 }
