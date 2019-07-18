@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function Details(props){
-    return(
+export default function Details(props) {
+    return (
         <p>{props.detail}
         </p>
     )
