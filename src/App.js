@@ -1,6 +1,5 @@
-import React, { useState }from "react";
+import React from "react";
 import "./App.css";
-import Card from './components/card.js'
 import AcquireData from './components/data'
 
 function App() {
@@ -9,7 +8,7 @@ function App() {
     <div className="App">
       <p>
         Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+        app! Have fun <span role="img" aria-label="Rocket">🚀</span>!
       </p>
       <AcquireData />
     </div>
